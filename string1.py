@@ -28,8 +28,10 @@ __author__ = "Ralph, Gabby, Shanquel"
 
 
 def donuts(count):
-    # your code here
-    return
+   message = 'Number of donuts: ' + str(count) 
+   if count >= 10: 
+        return 'Number of donuts: many' 
+   return message
 
 
 # B. both_ends
@@ -42,8 +44,9 @@ def donuts(count):
 
 
 def both_ends(s):
-    # your code here
-    return
+    if len(s) < 2:
+        return ''
+    return s[0:2] + s[-2:]
 
 
 # C. fix_start
