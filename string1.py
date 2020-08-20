@@ -28,10 +28,10 @@ __author__ = "Ralph, Gabby, Shanquel"
 
 
 def donuts(count):
-   message = 'Number of donuts: ' + str(count) 
-   if count >= 10: 
-        return 'Number of donuts: many' 
-   return message
+    message = 'Number of donuts: ' + str(count)
+    if count >= 10:
+        return 'Number of donuts: many'
+    return message
 
 
 # B. both_ends
@@ -61,9 +61,9 @@ def both_ends(s):
 
 
 def fix_start(s):
-    # your code here
-    return
-
+    first_char = s[0] #storring the old character in first_char
+    s = s.replace(s[0], "*") #replacing the characters with *
+    return first_char + s[1: len(s)] # the stored variable plus the new method.
 
 # D. mix_up
 # Given strings a and b, return a single string with a and
