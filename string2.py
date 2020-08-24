@@ -4,7 +4,7 @@ Kenzie assignment: String2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+__author__ = "Ralph, Gabby, and Demo"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -23,8 +23,12 @@ __author__ = "???"
 
 
 def verbing(s):
-    # your code here
-    return
+    # if length of the strin gis at least 3 AND ends with ing already add ly
+    if len(s) >= 3 and s[-3:] == 'ing':
+        return s + 'ly'
+    if len(s) > 2:  # if it's less than 2  add ing
+        return s + 'ing'
+    return s  # the result of the conditionals
 
 
 # E. not_bad
@@ -37,8 +41,11 @@ def verbing(s):
 
 
 def not_bad(s):
-    # your code here
-    return
+    if (s[-1] == '!') and s.find('bad') > s.find('not'):
+        return f"{s[0:s.find('not')]}good!"
+    if s.find('bad') > s.find('not'):
+        return f"{s[0:s.find('not')]}good"
+    return s
 
 
 # F. front_back
@@ -52,8 +59,8 @@ def not_bad(s):
 
 
 def front_back(a, b):
-    # your code here
-    return
+    if len(a) % 2:
+        return 
 
 
 # Provided simple test() function used in main() to print

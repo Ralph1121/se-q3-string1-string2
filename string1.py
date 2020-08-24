@@ -4,7 +4,7 @@ Kenzie assignment: String1
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Ralph, Gabby, Shanquel"
+__author__ = "Ralph, Gabby, Shanquel, class Demo from 08/21/2020"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -46,7 +46,7 @@ def donuts(count):
 def both_ends(s):
     if len(s) < 2:
         return ''
-    return s[0:2] + s[-2:]
+    return s[0:2] + s[-2:] 
 
 
 # C. fix_start
@@ -76,8 +76,7 @@ def fix_start(s):
 
 
 def mix_up(a, b):
-    # your code here
-    return
+    return b[:2] + a[2:] + ' ' + a[:2] + b[2:]
 
 
 # Provided simple test() function used in main() to print
