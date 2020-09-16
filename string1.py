@@ -46,7 +46,7 @@ def donuts(count):
 def both_ends(s):
     if len(s) < 2:
         return ''
-    return s[0:2] + s[-2:] 
+    return s[0:2] + s[-2:]
 
 
 # C. fix_start
@@ -61,9 +61,10 @@ def both_ends(s):
 
 
 def fix_start(s):
-    first_char = s[0] #storring the old character in first_char
-    s = s.replace(s[0], "*") #replacing the characters with *
-    return first_char + s[1: len(s)] # the stored variable plus the new method.
+    first_char = s[0]  # storring the old character in first_char
+    s = s.replace(s[0], "*")  # replacing the characters with *
+    # the stored variable plus the new method.
+    return first_char + s[1: len(s)]
 
 # D. mix_up
 # Given strings a and b, return a single string with a and
